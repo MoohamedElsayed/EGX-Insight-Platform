@@ -203,7 +203,7 @@ def load_data(df):
 
             conn.commit()
 
-            print("Success! Financial data loaded into database.")
+        print("Success! Financial data loaded into database.")
 
     except Exception as e:
         print(f"Database Error: {e}")
