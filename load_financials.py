@@ -122,6 +122,9 @@ def load_data(df):
 
     df.rename(columns=column_mapping, inplace=True)
 
+    product = 22.5 * df['eps'].fillna(0) * df['book_value_per_share'].fillna(0)
+    df['graham_number'] = product.apply(lambda x: np.sqrt(x) if x > 0 else None)
+
     if not conn_string:
         print("conn_string is missing. Check your environment variables")
         return
@@ -160,7 +163,9 @@ def load_data(df):
             clean_nan(row.get('ebitda')),
             clean_nan(row.get('ev_ebitda')),
             clean_nan(row.get('beta')),
-            clean_nan(row.get('book_value_per_share'))
+            clean_nan(row.get('book_value_per_share')),
+            clean_nan(row.get('graham_number'))
+
             )
             
 
@@ -170,13 +175,13 @@ def load_data(df):
                 one_year_change_pct, market_cap, shares_outstanding, revenue, net_income, 
                 eps, next_earnings_date, dividend_yield_pct, pe_ratio, roa_pct, 
                 roe_pct, gross_profit_margin_pct, price_to_book, ebitda, ev_ebitda, 
-                beta, book_value_per_share
+                beta, book_value_per_share, graham_number 
             ) VALUES (
                 CURRENT_DATE, %s, 
                 %s, %s, %s, %s, %s, 
                 %s, %s, %s, %s, %s, 
                 %s, %s, %s, %s, %s, 
-                %s, %s
+                %s, %s,%s
             )
             ON CONFLICT (record_date, code) 
             DO UPDATE SET 
@@ -196,7 +201,8 @@ def load_data(df):
                 ebitda = EXCLUDED.ebitda,
                 ev_ebitda = EXCLUDED.ev_ebitda,
                 beta = EXCLUDED.beta,
-                book_value_per_share = EXCLUDED.book_value_per_share;
+                book_value_per_share = EXCLUDED.book_value_per_share,
+                graham_number = EXCLUDED.graham_number;
                 """
             
             cur.execute(sql, data_tuple)

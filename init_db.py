@@ -53,8 +53,8 @@ def initialize_database():
             
                     df.columns = [c.strip() for c in df.columns]
 
-                    if 'code' not in df.columns or 'company_name' not in df.columns:
-                        raise ValueError("CSV must contain 'code' and 'company_name' columns")
+                    if 'code' not in df.columns or 'company_name' not in df.columns or 'isin_code' not in df.columns:
+                        raise ValueError("CSV must contain 'code', 'company_name' and 'isin code' columns")
 
                     print(f"   Found {len(df)} stocks. Inserting...")
             
@@ -62,10 +62,10 @@ def initialize_database():
                     for _, row in df.iterrows():
 
                         cur.execute("""
-                            INSERT INTO stocks (code, company_name)
-                            VALUES (%s, %s)
+                            INSERT INTO stocks (code, company_name, isin_code)
+                            VALUES (%s, %s, %s)
                             ON CONFLICT (code) DO NOTHING;
-                        """, (row['code'], row['company_name']))
+                        """, (row['code'], row['company_name'], row['isin_code']))
                         inserted_count += 1
             
                     print(f"Finished populating the stocks table. Processed {inserted_count} rows.")

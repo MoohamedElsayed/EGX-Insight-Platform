@@ -1,103 +1,102 @@
-code,company_name
-ADIB,Abu Dhabi Islamic Bank Egypt
-ABUK,Abou Kir Fertilizers
-ACTF,ACT Financial
-ECAP,El Kahera Housing and Development
-KRDI,Al Khair River for Development
-ATLC,Al Tawfeek Financial
-ALCN,Alexandria Containers and Goods
-AMOC,Alexandria Mineral Oils Company
-RREI,Arab Real Estate Investment Company
-AMER,Amer Group Holding
-ACGC,Arab Cotton Ginning
-ADPC,Arab Dairy Products Company
-ARAB,Porto Group Holding
-AMIA,Arab Moltaka Investments
-AIDC,Arabia for Investment and Development
-AIHC,Arabia Investments Holding
-ARCC,Arabian Cement Company
-ASCM,ASEC Mining
-ASPI,Pioneers Holding Company
-BINV,B Investments Holding
-BTFH,Beltone Financial Holding
-CIRA,Cairo for Investment and Real Estate Development
-COSG,Cairo Oils and Soap
-POUL,Cairo Poultry
-CSAG,Canal Shipping Agencies
-PRCL,Ceramic and Porcelain
-CERA,Arab Ceramics Aracemco
-CLHO,Cleopatra Hospital Company
-COMI,Commercial International Bank Egypt
-CNFN,Sarwa Capital Holding
-CIEB,Credit Agricole Egypt
-SUGR,Delta Sugar
-DSCW,Dice Sport and Casual Wear
-EFIH,eFinance Investment Group
-EAST,Eastern Company
-EXPA,Export Development Bank of Egypt
-EFID,Edita Food Industries
-HRHO,EFG Hermes Holding
-EGAL,Egypt Aluminum
-EGAS,Egypt Gas
-MPRC,Egypt Media Production City
-EGTS,Egyptian Resorts Company
-ETRS,Egytrans
-EHDR,Egyptian Housing Development
-PHAR,Egyptian International Pharmaceuticals
-ELKA,El Kahera Housing
-KABO,El Nasr Clothes and Textiles Kabo
-OBRI,El Obour Real Estate Investment
-UEGC,Upper Egypt Contracting
-SWDY,Elsewedy Electric
-ELSH,El Shams Housing and Urbanization
-ELEC,Electro Cable Egypt
-EMFD,Emaar Misr for Development
-FWRY,Fawry for Banking and Payment Technology
-GBCO,GB Corp
-GGCC,Giza General Contracting
-HDBK,Housing and Development Bank
-ISPH,Ibn Sina Pharma
-ICFC,International Company for Fertilizers and Chemicals
-IEEC,Industrial Engineering Enterprises
-ENGC,Engineering Industries Company
-IFAP,International Agricultural Products
-ISMQ,Iron and Steel for Mines and Quarries
-ISMA,Ismailia Misr Poultry
-JUFO,Juhayna Food Industries
-EGCH,Egyptian Chemical Industries
-LCSW,Lecico Egypt
-MCRO,Macro Group Pharmaceuticals
-MASR,Medinet Nasr Housing
-MPCO,Mansourah Poultry
-MOIL,Maridive Oil Services
-MEPA,Medical Packaging Company
-MPCI,Memphis Pharmaceuticals
-MENA,MENA Investment
-MCQE,Misr Cement Qena
-HELI,Heliopolis Housing and Development
-MFPC,Misr Fertilizers Production Company
-ATQA,Misr National Steel Ataqa
-MTIE,MM Group for Industry and International Trade
-OLFI,Obour Land for Food Industries
-ODIN,ODIN Investments
-ORAS,Orascom Construction
-OFH,Orascom Financial Holding
-ORHD,Orascom Hotels and Development
-ORWE,Oriental Weavers
-PHDC,Palm Hills Development
-PRDC,Pioneer Properties for Urban Development
-CCAP,Citadel Capital
-RAYA,Raya Holding for Financial Investments
-SKPC,Sidi Kerir Petrochemicals
-SCEM,Sinai Cement
-OCDI,6th of October Development and Investment
-SVCE,South Valley Cement
-TMGH,Talaat Moustafa Group Holding
-TAQA,TAQA Arabia
-ETEL,Telecom Egypt
-RMDA,Tenth of Ramadan for Pharmaceutical Industries
-UBEE,The United Bank
-UNIT,United Housing and Development
-VLMR,Egypt Kuwait Holding
-VLMRA,Egypt Kuwait Holding Shares
-ZMID,Zahraa Maadi Investment and Development
+code,company_name,isin_code
+ADIB,Abu Dhabi Islamic Bank Egypt,EGS60111C019
+ABUK,Abou Kir Fertilizers,EGS38191C010
+ACTF,ACT Financial,EGS7D5P1C019
+ECAP,El Ezz Porcelain,EGS3C071C015
+KRDI,Al Khair River for Development,EGS02291C010
+ATLC,Al Tawfeek Financial,EGS676N1C015
+ALCN,Alexandria Containers and Goods,EGS42111C012
+AMOC,Alexandria Mineral Oils Company,EGS380P1C010
+RREI,Arab Real Estate Investment Company,EGS65011C016
+AMER,Amer Group Holding,EGS675S1C011
+ACGC,Arab Cotton Ginning,EGS32221C011
+ADPC,Arab Dairy Products Company,EGS30221C013
+ARAB,Arab Developers Holding,EGS694A1C018
+AMIA,Arab Moltaka Investments,EGS67221C019
+AIDC,Arabia for Investment and Development,EGS65R01C015
+AIHC,Arabia Investments Holding,EGS21351C019
+ARCC,Arabian Cement Company,EGS3C0O1C016
+ASCM,ASEC Mining,EGS10001C013
+ASPI,Aspire Capital Holding For Financial Investments,EGS691L1C018
+BINV,B Investments Holding,EGS691T1C010
+BTFH,Beltone Financial Holding,EGS691G1C015
+CIRA,Cairo for Investment and Real Estate Development,EGS65541C012
+COSG,Cairo Oils and Soap,EGS30581C010
+POUL,Cairo Poultry,EGS02051C018
+CSAG,Canal Shipping Agencies,EGS44031C010
+PRCL,Ceramic and Porcelain,EGS3C111C019
+CERA,The Arab Ceramic Ceramica Remas,EGS3C151C015
+CLHO,Cleopatra Hospital Company,EGS729J1C018
+COMI,Commercial International Bank Egypt,EGS60121C018
+CNFN,Contact Financial Holding,EGS738I1C018
+CIEB,Credit Agricole Egypt,EGS60041C018
+SUGR,Delta Sugar,EGS30201C015
+DSCW,Dice Sport and Casual Wear,EGS33321C018
+EFIH,E-finance For Digital and Financial Investments,EGS743O1C013
+EAST,Eastern Company,EGS37091C013
+EXPA,Export Development Bank of Egypt,EGS60241C014
+EFID,Edita Food Industries,EGS305I1C011
+HRHO,EFG Hermes Holding,EGS69101C011
+EGAL,Egypt Aluminum,EGS3E181C010
+EGAS,Egypt Gas,EGS39011C019
+MPRC,Egypt Media Production City,EGS78021C010
+EGTS,Egyptian for Tourism Resorts,EGS70431C019
+ETRS,Egyptian Transport (EGYTRANS),EGS42051C010
+EHDR,Egyptian Housing Development,EGS65341C017
+PHAR,Egyptian International Pharmaceuticals,EGS38081C013
+ELKA,El Kahera Housing,EGS65071C010
+KABO,El Nasr Clothes and Textiles Kabo,EGS33061C010
+OBRI,El Obour Real Estate Investment,EGS65551C011
+UEGC,Elsaeed Contracting And Real Estate Investment Company,EGS21531C016
+SWDY,Elsewedy Electric,EGS3G0Z1C014
+ELSH,El Shams Housing and Urbanization,EGS65091C018
+ELEC,Electro Cable Egypt,EGS3G231C011
+EMFD,Emaar Misr for Development,EGS673Y1C015
+FWRY,Fawry for Banking and Payment Technology,EGS745L1C014
+GBCO,GB Corp,EGS673T1C012
+GGCC,Giza General Contracting,EGS21541C015
+HDBK,Housing and Development Bank,EGS60301C016
+ISPH,Ibn Sina Pharma,EGS512O1C012
+ICFC,International Company for Fertilizers and Chemicals,EGS520D1C015
+IEEC,Industrial And Engineering Projects,EGS22171C010
+ENGC,Engineering Industries Company,EGS3F021C017
+IFAP,International Agricultural Products,EGS07061C012
+ISMQ,Iron and Steel for Mines and Quarries,EGS102S1C014
+ISMA,Ismailia Misr Poultry,EGS02021C011
+JUFO,Juhayna Food Industries,EGS30901C010
+EGCH,Egyptian Chemical Industries,EGS38201C017
+LCSW,Lecico Egypt,EGS3C161C014
+MCRO,Macro Group Pharmaceuticals,EGS7D971C011
+MASR,Madinet Masr For Housing and Development,EGS65571C019
+MPCO,Mansourah Poultry,EGS02091C014
+MOIL,Maridive Oil Services,EGS44012C010
+MEPA,Medical Packaging Company,EGS3C4L1C015
+MPCI,Memphis Pharmaceuticals,EGS38351C010
+MENA,Mena Touristic & Real Estate Investment,EGS65441C015
+MCQE,Misr Cement Qena,EGS3C391C017
+HELI,Heliopolis Housing,EGS65591C017
+MFPC,Misr Fertilizers Production Company,MFPC
+ATQA,Misr National Steel Ataqa,EGS3D0C1C018
+MTIE,MM Group for Industry and International Trade,EGS75011C014
+OLFI,Obour Land for Food Industries,EGS30AL1C012
+ODIN,ODIN Investments,EGS67181C015
+ORAS,Orascom Construction,EGS95001C011
+OFH,O B Financial Holding,EGS696S1C016
+ORHD,Orascom Development Egypt,EGS70321C012
+ORWE,Oriental Weavers,EGS33041C012
+PHDC,Palm Hills Development,EGS655L1C012
+PRDC,Pioneer Properties for Urban Development,EGS21FW1C015
+CCAP,QALA For Financial Investments,EGS73541C012
+RAYA,Raya Holding for Financial Investments,EGS690C1C010
+SKPC,Sidi Kerir Petrochemicals,EGS380S1C017
+SCEM,Sinai Cement,EGS3C401C014
+OCDI,6th of October Development and Investment,EGS65851C015
+SVCE,South Valley Cement,EGS3C351C011
+TMGH,Talaat Moustafa Group Holding,EGS691S1C011
+TAQA,TAQA Arabia,EGS490S1C014
+ETEL,Telecom Egypt,EGS48031C016
+RMDA,Tenth of Ramadan for Pharmaceutical Industries,EGS381B1C015
+UBEE,The United Bank,EGS600M1C017
+UNIT,United Housing and Development,EGS65061C011
+VLMRA,Valmore Holding EGP,EGS69081C023
+ZMID,Zahraa Maadi Investment and Development,EGS21171C011
