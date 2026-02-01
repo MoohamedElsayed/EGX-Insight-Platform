@@ -55,10 +55,6 @@ def fetch_daily_prices():
                     progress=False
                     )
 
-                    today = pd.Timestamp.utcnow().date()
-
-                    df = df[df.index.date == today]
-
                     if df.empty:
                        print("\nCouldn't Find any data of the company for the last 10 days")
                        continue

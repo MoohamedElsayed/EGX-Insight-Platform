@@ -3,7 +3,7 @@ name: Daily Stock Scraper
 on:
   schedule:
 
-    - cron: '0 18 * * 0-4'
+    - cron: '0 8 * * 0-4'
   
   workflow_dispatch:
 
