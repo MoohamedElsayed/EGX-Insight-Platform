@@ -24,6 +24,10 @@ def clean_nan(value):
 def clean_data():
 
     df = pd.read_csv(CSV_FILE, na_values=['-'])
+    
+    local_eps = df['Prev. Close'] / df['P/E Ratio'].astype(float)
+
+    EX_Factor = local_eps / df['EPS']
 
     columns_to_drop = ["Source_URL", "Bid/Ask", "Prev. Close","Open", "Day's Range", "52 wk Range",
                   "Volume", "Average Vol. (3m)", "Fair Value", "Fair Value Upside", "EPS Growth Forecast",
@@ -31,6 +35,8 @@ def clean_data():
     df.drop(columns = columns_to_drop , inplace= True)
 
     df['1-Year Change'] = df['1-Year Change'].str.replace("%", "").astype(float)
+    
+
 
     df['Market Cap'] = df['Market Cap'].apply(lambda x:
                                          x if not isinstance(x, str) else (
@@ -55,16 +61,16 @@ def clean_data():
                                          float(x[:-1]) * 1e6 if x.endswith('M') else (
                                          float(x[:-1]) * 1e3 if x.endswith('K') else (
                                          float(x) 
-                                         )))))
+                                         ))))) * EX_Factor
     
 
     df['Net Income'] = df['Net Income'].apply(lambda x:
                                          x if not isinstance(x, str) else (
                                          float(x[:-1]) * 1e9 if x.endswith('K') else (
                                          float(x) * 1e6 
-                                         )))
+                                         ))) * EX_Factor
     
-    df['EPS'] = df['EPS'].astype(float)
+    df['EPS'] = df['EPS'] * EX_Factor
 
     df['Next Earnings Date'] = pd.to_datetime(df['Next Earnings Date'], format='%b %d, %Y')
 
@@ -86,7 +92,7 @@ def clean_data():
                                          float(x[:-1]) * 1e6 if x.endswith('M') else (
                                          float(x[:-1]) * 1e3 if x.endswith('K') else (
                                          float(x) 
-                                         )))))
+                                         ))))) * EX_Factor
     
     df['EV/EBITDA'] = df['EV/EBITDA'].astype(float)
 
