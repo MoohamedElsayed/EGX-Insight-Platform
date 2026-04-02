@@ -16,13 +16,25 @@ def fetch_financial_data():
 
         all_data = []
 
+        session = requests.Session(impersonate="chrome120")
+
+        headers = {
+            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+            "Accept-Language": "en-US,en;q=0.9",
+            "Upgrade-Insecure-Requests": "1",
+            "Sec-Fetch-Dest": "document",
+            "Sec-Fetch-Mode": "navigate",
+            "Sec-Fetch-Site": "none",
+            "Sec-Fetch-User": "?1"
+        }
+
         for symbol, url in stocks.items():
 
             print(f"Scraping {symbol} financials...", end=" ")
 
 
             try:
-                response = requests.get(url, impersonate="chrome110")
+                response = session.get(url, headers=headers)
 
                 if response.status_code != 200:
                     print(f"Failed to retrieve data for {symbol}. Status code: {response.status_code}")
