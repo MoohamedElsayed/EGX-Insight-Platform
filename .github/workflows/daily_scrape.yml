@@ -1,8 +1,7 @@
-name: Daily Stock Scraper
+name: Daily Stock Scraper & Indicators
 
 on:
   schedule:
-
     - cron: '0 6 * * 0-4'
   
   workflow_dispatch:
@@ -23,9 +22,14 @@ jobs:
       - name: Install Dependencies
         run: |
           pip install --upgrade pip
-          pip install pandas psycopg2-binary python-dotenv yfinance
+          pip install pandas psycopg2-binary python-dotenv yfinance pandas_ta
 
-      - name: Run Fetch Prices
+      - name: 1. Fetch Today's Prices
         env:
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
         run: python fetch_prices.py
+
+      - name: 2. Calculate Indicators
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+        run: python calc_indicators.py
