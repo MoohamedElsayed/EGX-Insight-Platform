@@ -38,7 +38,11 @@ def fetch_daily_prices():
                 insert_sql = """
                 INSERT INTO daily_prices (record_date, code, close_price, high_price, low_price, open_price)
                 VALUES (%s, %s, %s, %s, %s, %s)
-                ON CONFLICT (record_date, code) DO NOTHING;
+                ON CONFLICT (record_date, code) DO UPDATE SET
+                        close_price = EXCLUDED.close_price,
+                        high_price = EXCLUDED.high_price,
+                        low_price = EXCLUDED.low_price,
+                        open_price = EXCLUDED.open_price;
                 """
 
 
