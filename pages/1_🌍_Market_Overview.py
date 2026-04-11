@@ -10,7 +10,9 @@ load_dotenv()
 
 @st.cache_resource 
 def init_connection():
-    return psycopg2.connect(os.getenv("DATABASE_URL"))
+    conn = psycopg2.connect(os.getenv("DATABASE_URL"))
+    conn.autocommit = True  
+    return conn
 
 conn = init_connection()
 
