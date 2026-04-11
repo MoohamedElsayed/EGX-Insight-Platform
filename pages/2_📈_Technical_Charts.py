@@ -15,13 +15,13 @@ def init_connection():
 conn = init_connection()
 
 try:
+    # Try to ping the database to see if the connection is still alive
+    conn.rollback()
     with conn.cursor() as cur:
         cur.execute("SELECT 1")
-except (psycopg2.OperationalError, psycopg2.InterfaceError):
-    # If the cloud DB closed the connection, clear the cache and reconnect
+except Exception: 
     st.cache_resource.clear()
     conn = init_connection()
-
 
 
 
