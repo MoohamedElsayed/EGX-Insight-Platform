@@ -105,7 +105,7 @@ with colA:
                 'Graham Number': '{:.2f}', 
                 'Discount (%)': '{:.1f}%'
             }), 
-            use_container_width=True, 
+            width='stretch', 
             hide_index=True
         )
     else:
