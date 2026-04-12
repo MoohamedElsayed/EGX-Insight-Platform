@@ -16,13 +16,18 @@ This project solves the problem of fragmented and delayed EGX market data by aut
 
 The platform is fully automated, utilizing a modern Data Engineering stack to ensure data is fresh, accurate, and instantly available.
 
-<img width="1188" height="792" alt="EGX Insight Platform" src="https://github.com/user-attachments/assets/65549c36-1a45-46ad-889b-f96e5416b7bb" />
 
 
 * **1. Extraction & Automation:** GitHub Actions triggers a daily workflow post-market close, executing Python scrapers to pull live market data and fundamental balance sheets.
 * **2. Transformation:** Data is cleaned and enriched using Pandas. Complex technical indicators (RSI, Bollinger Bands, MACD) and value metrics (Graham Number) are calculated mathematically before storage.
 * **3. Loading:** The structured data is securely pushed into a cloud-hosted serverless PostgreSQL database (NeonDB).
 * **4. Presentation:** A Streamlit web application queries the database in real-time, utilizing query caching and state management to deliver a lightning-fast UI.
+
+![final final](https://github.com/user-attachments/assets/27a625fc-f5a8-44c6-84d6-0217ccee65f9)
+
+  
+<img width="1188" height="792" alt="EGX Insight Platform" src="https://github.com/user-attachments/assets/65549c36-1a45-46ad-889b-f96e5416b7bb" />
+
 
 ---
 
