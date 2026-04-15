@@ -22,7 +22,7 @@ jobs:
       - name: Install Dependencies
         run: |
           pip install --upgrade pip
-          pip install pandas psycopg2-binary python-dotenv yfinance pandas_ta
+          pip install requests psycopg2-binary python-dotenv pandas pandas_ta
 
       - name: 1. Fetch Today's Prices
         env:
