@@ -1,4 +1,4 @@
-# 🦅 EGX Insight Platform
+# 🦅 EGX Insight Platform 
 
 **Live Dashboard:** [Click here to view the live app](https://egx-insight-platform.streamlit.app/)
 
